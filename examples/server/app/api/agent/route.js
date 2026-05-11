@@ -83,7 +83,7 @@ export const POST = async (request) => {
       Name: agentName,
       LLM: {
         Url: process.env.LLM_URL || "https://ark.cn-beijing.volces.com/api/v3/chat/completions",
-        ApiKey: process.env.LLM_API_KEY || "",
+        ApiKey: process.env.LLM_API_KEY || "zego_test",
         Model: process.env.LLM_MODEL || "doubao-1-5-pro-32k-250115",
         SystemPrompt: process.env.LLM_SYSTEM_PROMPT || "You are a friendly AI avatar assistant. Answer concisely.",
       },
@@ -91,8 +91,8 @@ export const POST = async (request) => {
         Vendor: "ByteDance",
         Params: {
           app: {
-            appid: process.env.TTS_APP_ID || "",
-            token: process.env.TTS_TOKEN || "",
+            appid: process.env.TTS_APP_ID || "zego_test",
+            token: process.env.TTS_TOKEN || "zego_test",
             cluster: "volcano_tts",
           },
           audio: {
